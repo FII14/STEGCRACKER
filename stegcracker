@@ -70,4 +70,4 @@ try:
     print(f"\n{p}[*] Ending @ {datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
 
 except Exception as e:
-    print(f"{r}[-] {p}An error occurred: {str(e
+    print(f"{r}[-] {p}An error occurred: {str(e)}")
