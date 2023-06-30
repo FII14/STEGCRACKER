@@ -12,6 +12,8 @@ c = Fore.CYAN
 gb = Fore.GREEN
 pb = Fore.LIGHTWHITE_EX
 
+os.system("clear")
+
 print(f"""{b}  
      _                                 _
  ___| |_ ___  __ _  ___ _ __ __ _  ___| | _____ _ __
