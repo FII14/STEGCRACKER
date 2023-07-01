@@ -2,7 +2,6 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Fii14/STEGCRACKER)
 ![GitHub contributors](https://img.shields.io/github/contributors/FII14/STEGCRACKER)
-![GitHub stars](https://img.shields.io/github/stars/FII14/STEGCRACKER?style=social)
 
 ![Steghide Password Cracker](https://github.com/FII14/STEGCRACKER/blob/main/39cc597bb65662ee9a8e7c96fa777ade.jpg)
 
