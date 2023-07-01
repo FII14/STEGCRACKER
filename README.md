@@ -12,6 +12,17 @@ This Python program cracks steghide file passwords using a wordlist. It utilizes
 - Python 3.x
 - Steghide
 
+## Install
+```
+$ git clone https://github.com/FII14/STEGCRACKER.git
+
+$ cd STEGCRACKER
+
+$ pip3 install -r requirements.txt
+
+$ python3 stegcracker.py --help
+```
+
 ## Usage
 ```
 python3 stegcracker.py -f path/to/steghide_file -w path/to/wordlist_file
