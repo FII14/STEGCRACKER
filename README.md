@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/FII14/STEGCRACKER)
 ![GitHub stars](https://img.shields.io/github/stars/FII14/STEGCRACKER?style=social)
 
-![Steghide Password Cracker](steghide-cracker.png)
+![Steghide Password Cracker](https://github.com/FII14/STEGCRACKER/blob/main/39cc597bb65662ee9a8e7c96fa777ade.jpg)
 
 ## Description
 This Python program cracks steghide file passwords using a wordlist. It utilizes the steghide command-line tool to extract information from steghide files by attempting different passwords from the specified wordlist.
