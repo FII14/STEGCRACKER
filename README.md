@@ -1,2 +1,26 @@
 # STEGCRACKER
-A simple Python program used to try passwords on steghide files using wordlists. Steghide is a utility used to hide secret files or messages in image or sound files. In this case, this program works to try to get the hidden files out of the steghide file by using various passwords from the provided wordlist.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Fii14/STEGCRACKER)
+![GitHub contributors](https://img.shields.io/github/contributors/FII14/STEGCRACKER)
+![GitHub stars](https://img.shields.io/github/stars/FII14/STEGCRACKER?style=social)
+
+![Steghide Password Cracker](steghide-cracker.png)
+
+## Description
+This Python program cracks steghide file passwords using a wordlist. It utilizes the steghide command-line tool to extract information from steghide files by attempting different passwords from the specified wordlist.
+
+## Prerequisites
+- Python 3.x
+- Steghide
+
+## Usage
+```
+python3 stegcracker.py -f path/to/steghide_file -w path/to/wordlist_file
+```
+
+Replace `path/to/steghide_file` with the actual path to your steghide file and `path/to/wordlist` with the actual path to your wordlist file.
+
+Wait for the program to finish. It will iterate through each password in the wordlist and attempt to extract information from the steghide file using the password. If a matching password is found, it will be displayed. If no matching password is found, a message will be shown.
+
+## Disclaimer
+Please remember that the use of Steghide to crack steghide files should be done with proper permission and only for legitimate purposes. Do not use this tool for illegal activities or without the necessary authorization.
