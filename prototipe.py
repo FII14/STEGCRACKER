@@ -65,7 +65,8 @@ try:
 
             if result.returncode == 0:
                 print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{g}INFO{p}] {pb}Password found: {g}{password}{p}")
-                cracked_file = f"{args.file}.out"
+                n = now.strftime("%d-%m-%Y-%H-%M-%S")
+                cracked_file = f"{args.file}-{n}.out"
                 command_s = ['steghide', 'extract', '-sf', args.file, '-p', password, '-xf', cracked_file]
                 subprocess.run(command_s, capture_output=True, text=True)
                 print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{g}INFO{p}] {pb}Cracked file saved as: {g}{cracked_file}{p}")
