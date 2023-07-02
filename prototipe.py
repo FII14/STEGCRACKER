@@ -17,7 +17,7 @@ pb = Fore.LIGHTWHITE_EX
 
 os.system("clear")
 
-print(f"""{b}  
+print(f"""{b}
      _                                 _
  ___| |_ ___  __ _  ___ _ __ __ _  ___| | _____ _ __
 / __| __/ _ \/ _` |/ __| '__/ _` |/ __| |/ / _ \ '__|
@@ -65,13 +65,13 @@ try:
 
             if result.returncode == 0:
                 print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{g}INFO{p}] {pb}Password found: {g}{password}{p}")
-                # Menyimpan file yang berhasil di-crack dengan nama file_cracked.ext
-                cracked_file = f"file_cracked.{args.file.split('.')[-1]}"
-                subprocess.run(['cp', args.file, cracked_file])
+                cracked_file = f"{args.file}.out"
+                command_s = ['steghide', 'extract', '-sf', args.file, '-p', password, '-xf', cracked_file]
+                subprocess.run(command_s, capture_output=True, text=True)
                 print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{g}INFO{p}] {pb}Cracked file saved as: {g}{cracked_file}{p}")
                 break
             else:
-              print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{gb}INFO{p}] {p}Incorrect password: {r}{password}{p}")
+                print(f"{p}[{c}{now.strftime('%H:%M:%S')}{p}] [{gb}INFO{p}] {p}Incorrect password: {r}{password}{p}")
 
         else:
             print(f"\n{r}[-] {p}No matching password found in the wordlist.")
