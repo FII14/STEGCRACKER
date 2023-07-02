@@ -1,8 +1,9 @@
 # STEGCRACKER
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Fii14/STEGCRACKER?style=flat-square)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Fii14/STEGCRACKER?style=flat-square)](https://github.com/Fii14/STEGCRACKER/commits/main)
 ![GitHub contributors](https://img.shields.io/github/contributors/FII14/STEGCRACKER?style=flat-square)
-
+[![GitHub license](https://img.shields.io/github/license/Fii14/STEGCRACKER?style=flat-square)](https://github.com/Fii14/STEGCRACKER/blob/main/LICENSE)
 ![Steghide Password Cracker](https://github.com/FII14/STEGCRACKER/blob/main/39cc597bb65662ee9a8e7c96fa777ade.jpg)
 
 ## Description
