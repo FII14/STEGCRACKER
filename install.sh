@@ -5,7 +5,7 @@
 sudo chmod +x stegcracker
 
 # Android 
-if [[ $(uname -o == "Android") ]];
+if [[ $(uname -o == "Android") ]]; then
     pkg update
     pkg install steghide
     pkg install python3
