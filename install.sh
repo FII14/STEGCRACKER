@@ -5,7 +5,7 @@
 sudo chmod +x stegcracker
 
 # Android 
-if [[ $(uname -o == "Android") ]]; then
+if [[ `uname -o == "Android"` ]]; then
     pkg update
     pkg install steghide
     pkg install python3
@@ -16,7 +16,7 @@ if [[ $(uname -o == "Android") ]]; then
     exit 0
 
 # Linux Ubuntu dan Debian beserta keturunannya
-elif [[ $(uname -o == "GNU/Linux") ]]; then
+elif [[ `uname -o == "GNU/Linux"` ]]; then
     sudo apt-get update 
     sudo apt-get install steghide 
     sudo apt-get install python3-pip
