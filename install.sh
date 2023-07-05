@@ -16,11 +16,11 @@ if [[ $(uname -o == "Android") ]];
     exit 0
 
 # Linux Ubuntu dan Debian beserta keturunannya
-elif [[ $(uname -o == "Linux") ]]; then
-    sudo apt-get update
-    sudo apt-get install steghide
+elif [[ $(uname -o == "GNU/Linux") ]]; then
+    sudo apt-get update 
+    sudo apt-get install steghide 
     sudo apt-get install python3-pip
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt 
     mv stegcracker /usr/bin
     echo "[•] Installation completed."
     echo "[•] You can run it by executing the command 'stegcracker --help'"
