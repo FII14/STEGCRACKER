@@ -1,9 +1,28 @@
-sudo apt-get update -y
-sudo apt-get install steghide -y
-sudo apt-get install python3-pip -y
-sudo apt-get install wordlists
-gzip -d /usr/share/wordlists/rockyou.txt
-pip3 install -r requirements.txt
+#!/bin/bash
+# @ Script  : Instal stegcracker
+# @ Pembuat : Rofi
+
 sudo chmod +x stegcracker
-sudo mv stegcracker /usr/bin
-stegcracker --help
+
+# Android 
+if [[ $(uname -o == "Android") ]];
+    pkg update
+    pkg install steghide
+    pkg install python3
+    pip3 install -r requirements.txt
+    mv stegcracker /data/data/com.termux/files/usr/bin
+    echo "[•] Installation completed."
+    echo "[•] You can run it by executing the command 'stegcracker --help'"
+    exit 0
+
+# Linux Ubuntu dan Debian beserta keturunannya
+elif [[ $(uname -o == "Linux") ]]; then
+    sudo apt-get update
+    sudo apt-get install steghide
+    sudo apt-get install python3-pip
+    pip3 install -r requirements.txt
+    mv stegcracker /usr/bin
+    echo "[•] Installation completed."
+    echo "[•] You can run it by executing the command 'stegcracker --help'"
+    exit 0
+fi
