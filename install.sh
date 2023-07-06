@@ -2,7 +2,7 @@
 # @ Script  : Instal stegcracker
 # @ Pembuat : Rofi
 
-chmod +x stegcracker
+chmod +x src/stegcracker
 
 # Android 
 if [[ $(uname -o) == "Android" ]]; then
