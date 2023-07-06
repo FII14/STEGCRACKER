@@ -24,7 +24,7 @@ if [[ $(uname -o) == "Android" ]]; then
     pip3 install -r requirements.txt
     mv src/stegcracker /data/data/com.termux/files/usr/bin
     echo -e "${g}[•] ${r}Installation completed."
-    echo -e "${g}[•] ${r}You can run it by executing the command 'stegcracker --help'"
+    echo -e "${g}[•] ${r}You can run it by executing the command '${g}stegcracker --help${r}'"
     exit 0
 
 # Linux Ubuntu dan Debian beserta keturunannya
