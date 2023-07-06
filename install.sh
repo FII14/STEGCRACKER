@@ -10,7 +10,7 @@ if [[ $(uname -o) == "Android" ]]; then
     pkg install steghide
     pkg install python3
     pip3 install -r requirements.txt
-    mv stegcracker /data/data/com.termux/files/usr/bin
+    mv src/stegcracker /data/data/com.termux/files/usr/bin
     echo "[•] Installation completed."
     echo "[•] You can run it by executing the command 'stegcracker --help'"
     exit 0
@@ -21,7 +21,7 @@ elif [[ $(uname -o) == "GNU/Linux" ]]; then
     sudo apt-get install steghide 
     sudo apt-get install python3-pip
     pip3 install -r requirements.txt 
-    mv stegcracker /usr/bin
+    mv src/stegcracker /usr/bin
     echo "[•] Installation completed."
     echo "[•] You can run it by executing the command 'stegcracker --help'"
     exit 0
