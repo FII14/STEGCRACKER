@@ -1,0 +1,10 @@
+password
+qwerty
+asdfgh
+123456
+zxcvbn
+098765
+admin
+superman
+superhero
+hacker
