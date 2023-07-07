@@ -50,7 +50,7 @@ except FileNotFoundError:
 
 try:
     now = datetime.now()
-    print(f"{r}[!] {p}Please remember that the use of Steghide to crack steghide files should be done with proper permission and only for legitimate purposes. Do not use this tool for illegal activities or without the necessary authorization.\n")
+    print(f"{r}[!] {p}Please remember that the use of STEGCRACKER to crack steghide files should be done with proper permission and only for legitimate purposes. Do not use this tool for illegal activities or without the necessary authorization.\n")
     print(f"{p}[*] Starting @ {now.strftime('%H:%M:%S %d/%m/%Y')}\n")
 
     # Melakukan iterasi pada setiap kata sandi dalam wordlist
