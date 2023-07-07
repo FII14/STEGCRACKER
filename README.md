@@ -11,4 +11,4 @@
 ## Introduction 
 SETGCRACKER is a tool designed to assist in cracking passwords on hidden files using steganography techniques. Steganography is a method used to hide confidential information inside non-confidential data, such as images or other files.
 
-[Documentation](jsksks)
+[Documentation](https://fii14.github.io/STEGCRACKER.github.io/)
