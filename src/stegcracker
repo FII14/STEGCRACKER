@@ -48,10 +48,10 @@ try:
     print(f"{r}[!] {p}Please remember that the use of STEGCRACKER to crack steghide files should be done with proper permission and only for legitimate purposes. Do not use this tool for illegal activities or without the necessary authorization.\n")
     time.sleep(7)
     print(f"{p}[*] Starting @ {now.strftime('%H:%M:%S %d/%m/%Y')}\n")
-    time.sleep(3)
 
     with open(args.wordlist, 'r') as wordlist_file:
         for line in wordlist_file:
+            time.sleep(1)
             now = datetime.now()
             password = line.strip()
             command = ['steghide', 'extract', '-sf', args.file, '-p', password, '-f']
@@ -72,7 +72,6 @@ try:
             print(f"\n{r}[-] {p}No matching password found in the wordlist.")
 
     print(f"\n{p}[*] Ending @ {datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
-    time.sleep(3)
 
 except Exception as e:
     print(f"{r}[-] {p}An error occurred: {str(e)}")
