@@ -15,8 +15,6 @@ c = Fore.CYAN
 gb = Fore.GREEN
 pb = Fore.LIGHTWHITE_EX
 
-os.system("clear")
-
 print(f"""{b}
      _                                 _
  ___| |_ ___  __ _  ___ _ __ __ _  ___| | _____ _ __
@@ -26,14 +24,12 @@ print(f"""{b}
              |___/
 {p}""")
 
-# Mencoba kata sandi file steghide menggunakan wordlist
 parser = argparse.ArgumentParser(description='Crack the steghide file password.')
 parser.add_argument('-f', '--file', help='Path to steghide file', required=True)
 parser.add_argument('-w', '--wordlist', help='Path to wordlist', required=True)
 args = parser.parse_args()
 
 try:
-    # Mengecek keberadaan file steghide
     with open(args.file):
         pass
 except FileNotFoundError:
@@ -41,7 +37,6 @@ except FileNotFoundError:
     exit(1)
 
 try:
-    # Mengecek keberadaan file wordlist
     with open(args.wordlist):
         pass
 except FileNotFoundError:
@@ -51,9 +46,10 @@ except FileNotFoundError:
 try:
     now = datetime.now()
     print(f"{r}[!] {p}Please remember that the use of STEGCRACKER to crack steghide files should be done with proper permission and only for legitimate purposes. Do not use this tool for illegal activities or without the necessary authorization.\n")
+    time.sleep(7)
     print(f"{p}[*] Starting @ {now.strftime('%H:%M:%S %d/%m/%Y')}\n")
+    time.sleep(3)
 
-    # Melakukan iterasi pada setiap kata sandi dalam wordlist
     with open(args.wordlist, 'r') as wordlist_file:
         for line in wordlist_file:
             now = datetime.now()
@@ -76,6 +72,7 @@ try:
             print(f"\n{r}[-] {p}No matching password found in the wordlist.")
 
     print(f"\n{p}[*] Ending @ {datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
+    time.sleep(3)
 
 except Exception as e:
     print(f"{r}[-] {p}An error occurred: {str(e)}")
