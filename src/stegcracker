@@ -51,7 +51,7 @@ try:
 
     with open(args.wordlist, 'r') as wordlist_file:
         for line in wordlist_file:
-            time.sleep(1)
+            # time.sleep(1)
             now = datetime.now()
             password = line.strip()
             command = ['steghide', 'extract', '-sf', args.file, '-p', password, '-f']
